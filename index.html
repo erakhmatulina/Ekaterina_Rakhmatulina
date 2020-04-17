@@ -3,9 +3,14 @@
 	Big Picture by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+TO DO: reload to return to the same place on the page
+	make links work within gallery
+	
 -->
 <html>
 	<head>
+	
 		<title>FIRE+WATER</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -65,19 +70,6 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>Who I Am</h2>
-					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
-				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
-			</section>
-
-			<!-- Three -->
-			<section id="three" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
 						<h2>Projects</h2>
 					</header>
 					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
@@ -87,32 +79,54 @@
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
 
+			<!-- Recent publications -->
+			<section id="three" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Recent Publications</h2>
+					</header>
+					<a href="https://www.researchgate.net/publication/339224066_Forest_Vegetation_Change_and_Its_Impacts_on_Soil_Water_Following_47_Years_of_Managed_Wildfire">
+						<img  src="images/Ecosystems.jpg" alt="Image" style="float: left; margin: 15px 12px 3px 0px; border: 1px solid #000000;" > </a>
+						<div style="overflow: hidden; min-width: 200px;">
+						<h3>Forest Vegetation Change and ItsImpacts on Soil Water Following 47Years of Managed Wildfires</h3>
+						Managed wildfire is an increasingly relevant management option to restore variability in vegetation structure within fire-suppressed montane forests in western North America. Managed wildfire often reduces tree cover and density, potentially leading to increases in soil moisture availability, water storage in soils and groundwater, and streamflow. However, the potential hydrologic impacts of managed wildfire in montane watersheds remain uncertain and are likely context dependent. Here, we characterize the response of vegetation and soil moisture to 47 years (1971–2018) of managed wildfire in Sugarloaf Creek Basin (SCB) in Sequoia-Kings Canyon National Park in the Sierra Nevada, California, USA, using repeat plot measurements, remote sensing of vegetation, and a combination of continuous in situ and episodic spatially distributed soil moisture measurements. We find that, by comparison to a nearby watershed with higher vegetation productivity and greater fire frequency, the managed wildfire regime at SCB caused relatively little change in dominant vegetation over the 47 year period and relatively little response of soil moisture. Fire occurrence was limited to drier mixed-conifer sites; fire-caused overstory tree mortality patches were generally less than 10 ha, and fires had little effect on removing mid- and lower strata trees. Few dense meadow areas were created by fire, with most forest conversion leading to sparse meadow and shrub areas, which had similar soil moisture profiles to nearby mixed-conifer vegetation. Future fires in SCB could be managed to encourage greater tree mortality adjacent to wetlands to increase soil moisture, although the potential hydrologic benefits of the program in drier basins such as this one may be limited.
+						</div>
+						<p style="clear: both;"></p>
+
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
 		<!-- Work -->
 			<section id="work" class="main style3 primary">
 				<div class="content">
 					<header>
-						<h2>My Work</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+						<h2>In the Media</h2>
+						<p>
+						Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
 						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
 						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						
 					</header>
 
 					<!-- Gallery  -->
+					
 						<div class="gallery">
 
+						
 						<article class="from-left">
 							<div class="image fit">
-							<a href="https://engineering.berkeley.edu/news/2018/11/fire-water/">
+							<a href="https://engineering.berkeley.edu/news/2018/11/fire-water/" >
   								<img  src="images/fall2018-cover.jpg" alt="Avatar" class="image"">
   									<div  class="middle">
    										 <div class="text">Berkeley Engineer: Fire and Water</div>
 								  </div>
-								  </a>
+					
 							</div>
 						</article>
+						</a>
 							<article class="from-top">
 											<div class="image fit">
-							<a href="https://engineering.berkeley.edu/news/2018/11/fire-water/">
+							<a href="https://engineering.berkeley.edu/news/2018/11/fire-water/" >
   								<img  src="images/BSR.jpg" alt="Avatar" class="image"">
   									<div  class="middle">
    										 <div class="text">Berkeley Science Review: Illustrations</div>
@@ -177,7 +191,6 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
