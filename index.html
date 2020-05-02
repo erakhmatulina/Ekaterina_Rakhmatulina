@@ -56,7 +56,8 @@ TO DO: reload to return to the same place on the page
 
 
 					<footer>
-						<a href="#one" class="button style2 down">More</a>
+						<a href="#one" class="button style2 down" style="padding: 0;
+border: none;">More</a>
 					</footer>
 				</div>
 				
@@ -90,10 +91,13 @@ TO DO: reload to return to the same place on the page
 
 					<!-- Gallery  -->
 					
-						<div class="gallery" style="transition: transform 0s ease, opacity 0s ease">
+						<div class="gallery" style="				-moz-transition: opacity 0s ease;
+				-webkit-transition: opacity 0s ease;
+				-ms-transition: opacity 0s ease;
+				transition: opacity 0s ease;">
 
 						
-						<article style="width:50%">
+						<article style="width:50%; transition: transform 0s ease, opacity 0s ease">
 							<div class="image fit">
 							<a href="#popup1" id="showpopup" </a>
   								<img  src="images/Basins-01.png" alt="Avatar" class="image">
@@ -189,9 +193,9 @@ TO DO: reload to return to the same place on the page
 						</article>
 						</a>
 							<article class="from-top">
-											<div class="image fit">
+											<div class="image fit" >
 							<a href="https://engineering.berkeley.edu/news/2018/11/fire-water/" >
-  								<img  src="images/BSR.jpg" alt="Avatar" class="image"">
+  								<img  src="images/BSR.jpg" alt="Avatar" class="image" style="height:100%">
   									<div  class="middle">
    										 <div class="text">Berkeley Science Review: Illustrations</div>
 								  </div>
@@ -215,13 +219,13 @@ TO DO: reload to return to the same place on the page
 			</section>
 
 			<!-- Recent publications -->
-			<section id="three" class="main style3 primary">
-				<div class="content box style2">
+			<section id="two" class="main style4">
+				<div class="content">
 					<header>
-						<h2>Recent Publications</h2>
+						<h2>Science Communication Through Art</h2>
 					</header>
 					<a href="https://www.researchgate.net/publication/339224066_Forest_Vegetation_Change_and_Its_Impacts_on_Soil_Water_Following_47_Years_of_Managed_Wildfire">
-						<img  src="images/CreekPainting.png" alt="Image" style="float: left; margin: 15px 12px 3px 0px; border: 1px solid #000000;" > </a>
+						<img  src="images/CreekPainting.png" alt="Image" style="width:30%;float: left; margin: 15px 12px 3px 0px;" > </a>
 						<div style="overflow: hidden; min-width: 200px;">
 						<h3>Forest Vegetation Change and Its Impacts on Soil Water Following 47 Years of Managed Wildfires</h3>
 <p> </p>
@@ -305,49 +309,68 @@ TO DO: reload to return to the same place on the page
 </div>
 <div id="popup2" class="overlay">
 	<div class="popup">
-		<h2>Here i am</h2>
-		<a class="close" href="#!">&times;</a>
+				<a class="close" href="#!">&times;</a>
 		<div class="content">
-			<p> Findings: Over 47 years of wildfire management has little impacts on vegetation 
-			    and soil moisture of one basin but has great impacts on another basin. </p>
+		<p></p>
+			<h2> Findings: Hydrological benefits of historically observed wildfire management on a medium sized watershed are expected to have similar effects in future climate. </h2>
 			    <p> The hydrological effects of restoring wildfire in Sierra Nevada forests are of great interest to managers, given the importance of these forests to California's water supply. 
 			     Data analysis and past modeling studies of the Illilouette Creek Basin (ICB) found that managed wildfire increased streamflow yields from the basin by approximately 5% compared to during fire suppression, and did so during a period  when streamflow in other regional basins was declining \citep{Boisrame2017,boisrame2019}.
 			      However, the changes in the ICB fire management policy were initiated nearly 50 years ago.  Fire management changes implemented now and over the coming years in Sierra Nevada basins will occur under a different climate than what was experienced during the 20th Century. 
 			       My objective was to determine whether the positive co-benefits for water supply from wildfire restoration in the ICB (as a case study) would be preserved under future climates.
 			        We infer that the managed fire regime in SCB has not led to large changes in soil moisture regimes in the basin.
-			     <img  src="images/RHESSysResults.png" style="width:80%; display:block;  margin-left: auto;
+			    
+			    <img  src="images/RHESSysTimeframe.png" style="width:70%; display:block;  margin-left: auto;
+  												margin-right: auto;" alt="Avatar" class="image"> 
+  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">The historical modeling time period is from 1972 to 2012 (A), denoting observed 40 years since the end of fire suppression policies in ICB. Future modeling time period is from 2030 to 2070 (B) and two climate scenarios are used. Blue, orange, and red vertical lines denote historical, 30\%, and 60\% increase in frequency of fire events, respectively.</p>
+ <img  src="images/RHESSysResults.png" style="width:80%; display:block;  margin-left: auto;
   												margin-right: auto;" alt="Avatar" class="image"> 
   				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Modeling results of streamflow and soil moisture changes;  positive change indicatesa  relative  increase  in  the  variable  as  a  result  of  fires.   Left  panel  shows  results  for  differentfire  frequency  regimes  under  rcp  4.5  climate  and  right  panel  shows  historical  fire  frequencysimulations under three different climate scenarios.  Shaded areas indicate the 95% confidenceinterval for the simulations.  Vertical orange lines represent timing of observed historical fires.</p>
 		  		<p> Figure \ref{fig:RHESSysResults} (right hand panel) presents summary results showing how basin-scale streamflow and soil moisture storage change following the restoration of a fire regime under historical, rcp 4.5, and rcp 8.5 climate scenarios.  The results indicate that despite minor differences in the timeseries, broadly there is no difference in the impact of fire on ICB hydrology under future versus historical climates: in both cases, restoring fire regimes in the basin leads to an increase of 15 mm/year specific discharge and 
 a maximum increase of 32-33 mm soil water storage.  </p>
-			    <img  src="images/SCBFig1.png" style="width:50%; display:block;  margin-left: auto;
-  												margin-right: auto;" alt="Avatar" class="image"> 
-  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Percent of the total vegetated area covered by each vegetation class for both Illilouette Creek Basin (ICB) and Sugarloaf Creek Basin (SCB).</p>
-		        <img  src="images/SCBFig2.png" style="width:50%; display:block;  margin-left: auto;
-  												margin-right: auto;" alt="Avatar" class="image"> 
-  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Distribution of soil moisture (in terms of volumetric water content) for each site-date-vegetation class combination in SCB.</p>
-		        <img  src="images/SCBFig4.png" style="width:50%; display:block;  margin-left: auto;
-  												margin-right: auto;" alt="Avatar" class="image"> 
-  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Normalized difference vegetation index (NDVI; averaged across a given basin for a given date), a proxy for productivity, was consistently higher in Illilouette Creek Basin than Sugarloaf Creek Basin.</p>
-		</div>
+			    		  		</div>
 	</div>
 </div>
 <div id="popup3" class="overlay">
 	<div class="popup">
-		<h2>Post Fire Soil Water Repellency </h2>
-		<p> Finding: In climates experiencing freeze/thaw cycles, soil water repellency will not contribute to flooding and erosion. </p>
-		<a class="close" href="#!">&times;</a>
+	<p></p>
+		<h2>Findings: post-fire soil water repellency decreases with freeze/thaw cycles on wet but not dry soil </h2>
+				<a class="close" href="#!">&times;</a>
 		<div class="content">
-			Thank to pop me out of that button, but now i'm done so you can close this window.
-		</div>
+			<p>Wildfires are a cause of soil water repellency (hydrophobicity), which reduces infiltration while increasing erosion and flooding from post-fire rainfall. 
+			Post-fire soil water repellency degrades over time, often in response to repeated wetting and drying of the soil.
+			 In mountainous fire prone forests such as those in the Western USA, however, the fire season often terminates in a cold and wet winter, during which soils not only wet and dry, but also freeze and thaw.
+			   Little is know about the effect of repeated freezing and thawing of soil on the breakdown of post-fire hydrophobicity. This study characterized the changes in hydrophobicity of Sierra Nevada mountain soils exposed to different combinations of wet-dry and freeze-thaw cycling. Following each cycle, hydrophobicity was measured using the Molarity of Ethanol test.
+			     Hydrophobicity declined similarly across all experiments that included a wetting cycle.
+			       Repeated freezing and thawing of dry soil did not degrade soil water repellency.
+			       Total soil organic matter content was not different between soils of contrasting hydrophobicity.
+			       Macroscopic changes such as fissures and cracks were observed to form as soil hydrophobicity decayed.
+			       Microscopic changes revealed by scanning electron microscope imagery suggest different levels of soil aggregation occurred in samples with distinct hydrophobicities, although the size of aggregates was not clearly correlated to the change in water repellency due to wet-dry and freeze-thaw cycling.
+			       A nine year climate and soil moisture record at Providence Critical Zone Observatory was used to relate the persistence of hydrophobicity in the laboratory to its expected longevity of 144 days at this well-characterized, typical mid-elevation Sierra Nevada site.
+			       Large portion of the breakdown in soil water repellency (79%) at this site is attributable to freeze-thaw cycling, underscoring the importance of this process in soil recovery from fire. </p>
+		<img  src="images/HydrophobicityFig.png" style="width:70%; display:block;  margin-left: auto;
+  												margin-right: auto;" alt="Avatar" class="image"> 
+  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Hydrophobicity as measured by MED test for eleven cycles of five treatments; the treatments are dry/freeze/thaw (DFT), wet/freeze/thaw (WFT), wet/dry (WD), wet/dry/freeze/thaw (WDFT), and wet/freeze/thaw/dry (WFTD). Actual measurements are shown as dots, and mean of six replicas is presented as a line. Average MED of non-burned soil is indicated by a gray dash line. Average MED for a reference soil that was burned but without treatment application measured throughout the experiment is indicated by a black dashed line.</p>
+<img  src="images/WFTwithCracks.png" style="width:40%; display:block;  margin-left: auto;
+  												margin-right: auto;" alt="Avatar" class="image"> 
+  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Images of eleven cycles of wet/freeze/thaw treatment for one of the replicas. Cycle ``0" is heated but untreated soil sample. Visible racking on soil surface is highlighted in white.</p>		</div>
+	<img  src="images/GrainSize.png" style="width:70%; display:block;  margin-left: auto;
+  												margin-right: auto;" alt="Avatar" class="image"> 
+  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Aggregate size (area) distribution curve of heated hydrophobic, heated hydrophilic, non-heated, and cycle 7 of WDFT soil samples. Aggregate sizes were calculated from SEM images at x100 resolution and BSE detection mode. Minimum particle size was cutoff at 0.005 cm$^2$ </p>
+	<img  src="images/ClimateFullSuccess.png" style="width:70%; display:block;  margin-left: auto;
+  												margin-right: auto;" alt="Avatar" class="image"> 
+  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Soil moisture at 12 hour resolution and precipitation at daily resolution time series for the entire nine year record (A), and October-April 2013-2014 (B). Shading in the the zoomed-in soil moisture and precipitation time series shows occurrence of wet and dry periods; each vertical bar represents a wet/dry cycle (B). Air temperature time series at 12 hour resolution for the entire nine year record (C), and  and October-April 2013-2014 (D). Shading in the zoomed-in in events shows freeze/thaw events</p>
+  	<img  src="images/DayDistribution.png" style="width:70%; display:block;  margin-left: auto;
+  												margin-right: auto;" alt="Avatar" class="image"> 
+  				<p style="font-style: italic;  margin-left: 165px; margin-right: 165px;">Box-and whisker plot of the number of days after October 1st that each cycle occurs over a nine year climate and soil moisture time series along with MED distribution based on the type of cycle occurence for each cycle.</p>
 	</div>
 </div>
 <div id="popup4" class="overlay">
 	<div class="popup">
-		<h2>Here i am</h2>
+	<p></p>
+		<h2>Findings: Soil moisture best explains fuel moisture for 10-hr fuels</h2>
 		<a class="close" href="#!">&times;</a>
 		<div class="content">
-			Thank to pop me out of that button, but now i'm done so you can close this window.
+			<p>Fuel moisture is a crucial determinant of fire behavior and risk. Fuel moisture is usually described in terms of live fuels (living plants) and dead fuels.  Although fuel moisture is often observed to provide input into fire risk assessments, it is usually not possible to measure it everywhere, forcing fire managers to rely on proxy fuel moisture indices. Mostly, these indices draw on atmospheric conditions. However, dead fuels are typically in hydraulic contact with soils, and a (minimal) body of previous work suggested that soil moisture influenced fuel moisture, potentially creating another mechanistic link between fire and water cycles.  In this project, I aim to better understand whether a relationship exists between soil moisture and dead fuel moisture across multiple locations and moisture gradients.  </p>
 		</div>
 	</div>
 </div>
