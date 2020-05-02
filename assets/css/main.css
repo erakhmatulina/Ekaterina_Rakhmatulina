@@ -675,6 +675,7 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		text-decoration: none;
+		border-color: #ffffff;
 	}
 
 		input[type="button"].down,
@@ -686,13 +687,12 @@ input, select, textarea {
 			height: 5em;
 			line-height: 4.5em;
 			padding: 0;
-			background-color: #39454b;
-			background-image: url("images/dark-arrow.svg");
 			background-size: 50px;
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
 			overflow: hidden;
+
 		}
 
 			input[type="button"].down.anchored,
@@ -714,6 +714,8 @@ input, select, textarea {
 		button.anchored {
 			position: absolute;
 			left: 50%;
+			width: 5em;
+			height: 5em;
 		}
 
 		input[type="button"]:hover,
@@ -722,6 +724,7 @@ input, select, textarea {
 		.button:hover,
 		button:hover {
 			background-color:#39454b;
+
 		}
 
 		input[type="button"]:active,
@@ -730,6 +733,7 @@ input, select, textarea {
 		.button:active,
 		button:active {
 			background-color: #39454b;
+;
 		}
 
 		input[type="button"].style2,
@@ -740,6 +744,8 @@ input, select, textarea {
 			background-color: #ffffff;
 			border: solid 2px #39454b;
 			color: inherit;
+	
+			
 		}
 
 			input[type="button"].style2:hover,
@@ -748,6 +754,18 @@ input, select, textarea {
 			.button.style2:hover,
 			button.style2:hover {
 				background-color:#39454b;
+				width: 5em;
+			height: 5em;
+						width: 5em;
+			height: 5em;
+			line-height: 4.5em;
+			padding: 0;
+			background-size: 50px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			text-indent: -10em;
+			overflow: hidden;
+			opacity:0.4;
 			}
 
 			input[type="button"].style2:active,
@@ -756,6 +774,11 @@ input, select, textarea {
 			.button.style2:active,
 			button.style2:active {
 				background-color: #39454b;
+				width: 5em;
+			height: 5em;
+			padding: 0;
+border: none;
+background: none;
 			}
 
 			input[type="button"].style2.down,
@@ -764,6 +787,8 @@ input, select, textarea {
 			.button.style2.down,
 			button.style2.down {
 				background-image: url("images/dark-arrow.svg");
+				width: 5em;
+			height: 5em;
 			}
 
 /* Form */
@@ -2187,7 +2212,10 @@ input, select, textarea {
 				text-align: center;
 				padding: 3em 10px 3em 10px;
 			}
-
+			.main.style4 {
+				text-align: left;
+				padding: 3em 10px 3em 10px;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
