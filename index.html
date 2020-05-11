@@ -1,3 +1,18 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="erakhmat@berkeley.edu";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}?>
 <!DOCTYPE HTML>
 <!--
 	Big Picture by HTML5 UP
@@ -280,6 +295,25 @@ So whether it is a stop to paint a creek during a bike ride, illustrating a narr
 					</div>
 				</div>
 			</section>
+			
+			    <form method="post" action="contact.php">
+        <label>Name:</label>
+        <input name="sender">
+
+        <label>Email address:</label>
+        <input name="senderEmail">
+
+        <label>Message:</label>
+        <textarea rows="5" cols="20" name="message"></textarea>
+
+        <input type="submit" name="submit">
+    </form>
+    
+    <form action="https://formspree.io/erakhmat@berkeley.edu" method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+</form>
 
 		
 		
