@@ -1537,7 +1537,10 @@ input, select, textarea {
 			}
 
 				.gallery article {
-					width: 100%;
+					width: 50%;
+					display: block;
+  					margin-left: auto;
+ 					 margin-right: auto;
 				}
 
 		}
@@ -1779,10 +1782,12 @@ input, select, textarea {
 				-ms-transform: translateX(100%);
 				transform: translateX(100%);
 			}
+			
 
 		.main.style3 {
 			text-align: center;
 			padding: 6em 0 6em 0;
+			
 		}
 
 			.main.style3 .content > header {
@@ -1847,7 +1852,10 @@ input, select, textarea {
 				width: 60%;
 			}
 
-		}
+		
+		.main.style2 .button.anchored {
+					width=20%;
+				}}
 
 		@media screen and (max-width: 736px) {
 
@@ -1866,6 +1874,10 @@ input, select, textarea {
 				.main.style1 h2 {
 					font-size: 3em;
 				}
+				.main.style1 .button.anchored {
+					display: none;
+				}
+
 
 			.main.style2 {
 				padding: 6em 15px 6em 15px;
@@ -1882,7 +1894,7 @@ input, select, textarea {
 				.main.style2 .content {
 					width: 100%;
 					max-width: 100%;
-					text-align: center;
+					text-align: left;
 					-moz-transform: none;
 					-webkit-transform: none;
 					-ms-transform: none;
@@ -1893,6 +1905,10 @@ input, select, textarea {
 				text-align: center;
 				padding: 3em 10px 3em 10px;
 			}
+			.main.style3 .button.anchored {
+					display: none;
+				}
+
 			.main.style4 {
 				text-align: left;
 				padding: 3em 10px 3em 10px;
@@ -2090,6 +2106,9 @@ input, select, textarea {
 
 			#contact .box {
 				padding: 1.5em 1.5em 2em 1.5em;
+				  display: block;
+  margin-left: auto;
+  margin-right: auto;
 			}
 
 		}
